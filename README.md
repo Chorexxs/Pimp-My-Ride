@@ -44,10 +44,10 @@ Aquí tienes un roadmap actualizado y detallado, que incorpora las mejoras y la 
 
 #### 1.1. **Definir objetivos y alcance**
 
-- [ ] Documentar los objetivos clave:
+- **Documentar los objetivos clave**:
   - Automatización y modernización de funciones del coche.
   - Integración de hardware y software en una app móvil.
-- [ ] Identificar limitaciones (presupuesto, disponibilidad de componentes, tiempo de desarrollo).
+- **Identificar limitaciones (presupuesto, disponibilidad de componentes, tiempo de desarrollo)**.
 
 #### 1.2. **Lista de hardware**
 
