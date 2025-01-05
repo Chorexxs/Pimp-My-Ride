@@ -32,12 +32,6 @@ Ponerle luces de ambiente al coche (de diferente colores) y poder controlarlas a
 
 Modo centinela. Cuando el coche esté aparcado y enllavado, que haya una opción desde la app de activar este modo, y que las cámaras del coche graben en todo momento para evitar algún robo o similar. Las grabaciones se eliminarán a las 72 horas. a menos que quiera guardar una en específico.
 
----
-
-Aquí tienes un roadmap actualizado y detallado, que incorpora las mejoras y la resolución de contradicciones identificadas:
-
----
-
 ## **📅 Roadmap**
 
 ### **Fase 1: Planificación y Requisitos**
