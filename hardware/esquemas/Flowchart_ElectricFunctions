@@ -1,0 +1,26 @@
+digraph "Flujo de Funciones" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Flujo de Funciones" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"2667955374c54f268180424aa36538ab" [label=ESP32 height=1.9 image="./esp32_icon.png" shape=none]
+	dcab80323043492b9d40f1df4adf13fb [label="Sensor mmWave" height=1.9 image="./sensor_icon.png" shape=none]
+	"418edf519da74cb3932e8db64c2854df" [label="Sensor LDR" height=1.9 image="./ldr_icon.png" shape=none]
+	c41c80cffed24822b29828c71032c26e [label="Cámara Trasera" height=1.9 image="./camera_icon.png" shape=none]
+	"70f68042bf5641dd96fa17d620e28a00" [label="Luces LED" height=1.9 image="./led_icon.png" shape=none]
+	d394e625acb14da595521554388b61d2 [label="Relés de Potencia" height=1.9 image="./relay_icon.png" shape=none]
+	"70a0a1e615724b30bbf578ff880c6e81" [label=Pantalla height=1.9 image="./screen_icon.png" shape=none]
+	subgraph cluster_Software {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label=Software labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		"6a1911e858f549a58c91bb128e4b43a1" [label="Procesamiento
+(OpenCV & Lógica)" height=2.3 image="C:\Users\Usuario\Documents\GitHub\Pimp-My-Ride\venv\Lib\site-packages\resources/programming/language\python.png" shape=none]
+		fe657a55f1424fbb919d398044d3d8ee [label="Lógica de Control
+(GPIO)" height=2.3 image="C:\Users\Usuario\Documents\GitHub\Pimp-My-Ride\venv\Lib\site-packages\resources/programming/language\python.png" shape=none]
+	}
+	"2667955374c54f268180424aa36538ab" -> fe657a55f1424fbb919d398044d3d8ee [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	fe657a55f1424fbb919d398044d3d8ee -> d394e625acb14da595521554388b61d2 [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	d394e625acb14da595521554388b61d2 -> "70f68042bf5641dd96fa17d620e28a00" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	dcab80323043492b9d40f1df4adf13fb -> "2667955374c54f268180424aa36538ab" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"418edf519da74cb3932e8db64c2854df" -> "2667955374c54f268180424aa36538ab" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	c41c80cffed24822b29828c71032c26e -> "6a1911e858f549a58c91bb128e4b43a1" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"6a1911e858f549a58c91bb128e4b43a1" -> "70a0a1e615724b30bbf578ff880c6e81" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
