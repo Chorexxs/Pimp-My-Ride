@@ -3,19 +3,9 @@ from django.db import models
 # Create your models here.
 
 
-class Car(models.Model):
-    name = models.CharField(max_length=100)
-    model = models.CharField(max_length=100)
-    year = models.IntegerField()
+class LightStatus(models.Model):
+    status = models.BooleanField(default=False)  # True para encendido
+    created_at = models.DateTimeField(auto_now_add=True)
 
-
-class Sensor(models.Model):
-    car = models.ForeignKey(Car, on_delete=models.CASCADE)
-    position = models.CharField(max_length=100)
-    is_active = models.BooleanField(default=False)
-
-
-class Light(models.Model):
-    car = models.ForeignKey(Car, on_delete=models.CASCADE)
-    position = models.CharField(max_length=100)
-    is_on = models.BooleanField(default=False)
+    def __str__(self):
+        return f"Light is {'on' if self.status else 'off'}"
