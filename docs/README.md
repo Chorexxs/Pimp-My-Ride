@@ -1,5 +1,7 @@
 # Pimp-My-Ride
 
+![Pausa](pausa.png)
+
 Proyecto en el que voy a tratar de modernizar mi SEAT del 2004 o cargármelo en el intento
 
 ## Say whaaaaaaaaaaaaaaaaaaaaaaaaat?
